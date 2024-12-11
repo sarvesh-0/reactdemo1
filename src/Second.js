@@ -1,6 +1,6 @@
 import React from 'react'
 const SecondHello =(props)=>{
-    let name = props.name
+    let name = props.nme
     let msg = props.msg
     return( 
     <>

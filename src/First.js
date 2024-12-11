@@ -7,7 +7,7 @@ export default function FirstHello(){
         <>
         <h3>Welcome to First Function Component ...</h3>
         <h4>Orewa Monkey D Luffy Kaizoku oni naru otoko da</h4>
-        <SecondHello name={name}  msg={msg}></SecondHello>
+        <SecondHello nme={name}  msg={msg}></SecondHello>
         </>
     );
 }
