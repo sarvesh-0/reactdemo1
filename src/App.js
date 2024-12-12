@@ -1,5 +1,6 @@
 
 import './App.css';
+import ChangeStateDemo from './ChangeStateDemo';
 import ConditionTest from './ConditionTest';
 import ConditionTest1 from './ConditionTest1';
 import FirstHello from './First';
@@ -25,6 +26,7 @@ function App() {
       <ListDemo2></ListDemo2>
       <HelloWorld firstname="Sarvesh" student={stud} studinput={studlist}></HelloWorld>
       <StateDemo></StateDemo>
+      <ChangeStateDemo></ChangeStateDemo>
     </>
   );
 }
