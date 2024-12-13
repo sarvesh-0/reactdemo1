@@ -25,6 +25,11 @@ import ModuleDemo from './StyleDemo/ModuleCssDemo';
 import StyledFC from './StyleDemo/StyledFC';
 import UseRefDemo from './HooksDemos/UseRefDemo';
 import UseMyCounterHook from './HooksDemos/UseMyCounterHook';
+import UseStateDemo2 from './HooksDemos/UseStateDemo2';
+import NumberAnalysis from './HooksDemos/UseEffectDemo2';
+import UseRefCalculator from './HooksDemos/UseRefDemo2';
+import UseStringHook from './HooksDemos/UseStringHook';
+import CompanyParent from './HooksDemos/CompanyParent';
 export const Context =createContext();
 function App() {
   let employee={'empname':'Roronova Zoro','empid':1,'salary':15000000}
@@ -63,6 +68,11 @@ function App() {
       <UseEffectDemo></UseEffectDemo>
       <UseRefDemo></UseRefDemo>
       <UseMyCounterHook></UseMyCounterHook>
+      <UseStateDemo2></UseStateDemo2>
+      <NumberAnalysis></NumberAnalysis>
+      <UseRefCalculator></UseRefCalculator>
+      <UseStringHook></UseStringHook>
+      <CompanyParent></CompanyParent>
     </>
   );
 }
