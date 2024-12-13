@@ -1,0 +1,95 @@
+
+.calculatorContainer {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid #0078D7;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+}
+
+.calculatorTable {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+.inputBox {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #0078D7;
+    border-radius: 5px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.inputBox:focus {
+    border-color: #004ba0;
+    box-shadow: 0 0 5px #004ba0;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #0078D7;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #004ba0;
+}
+
+.answer {
+    text-align: center;
+    font-weight: bold;
+    color: #004ba0;
+}
+
+.highlight {
+    background-color: #ffeb3b;
+    animation: highlightFade 2s forwards;
+}
+
+@keyframes highlightFade {
+    0% { background-color: #ffeb3b; }
+    100% { background-color: transparent; }
+}
+
+.historyTable {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    font-size: 16px;
+}
+
+.historyTable th, .historyTable td {
+    border: 1px solid #0078D7;
+    padding: 10px;
+    text-align: center;
+}
+
+.historyTable th {
+    background-color: #0078D7;
+    color: white;
+    font-weight: bold;
+}
+
+.historyTable tr:nth-child(even) {
+    background-color: #e0f7fa;
+}
+
+.historyTable tr:nth-child(odd) {
+    background-color: #b2ebf2;
+}
+
+.historyTable tr:hover {
+    background-color: #80deea;
+}

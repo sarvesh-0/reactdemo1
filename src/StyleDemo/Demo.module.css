@@ -1,0 +1,13 @@
+.forpara{
+    color: darkmagenta;
+    font-size: 24px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fordiv{
+    width: 400px;
+    background-color: lightgreen;
+    border-radius: 3px;
+    border-color: darkorchid;
+}
