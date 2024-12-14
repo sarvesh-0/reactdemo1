@@ -30,6 +30,16 @@ import NumberAnalysis from './HooksDemos/UseEffectDemo2';
 import UseRefCalculator from './HooksDemos/UseRefDemo2';
 import UseStringHook from './HooksDemos/UseStringHook';
 import CompanyParent from './HooksDemos/CompanyParent';
+import ControlledFormCC from './FormDemo/ControledFormCC';
+import ControlledFormFC from './FormDemo/ControlledFormFC';
+import UncontrolledFormCC from './FormDemo/UnControlledFormCC';
+import UncontrolledFc from './FormDemo/UnControlledFormFC';
+import ControlledForm from './FormDemo/FormDemo';
+import NoPage from './RoutingDemo/nopage';
+import Home from './RoutingDemo/Home';
+import Layout from './RoutingDemo/Layout';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 export const Context =createContext();
 function App() {
   let employee={'empname':'Roronova Zoro','empid':1,'salary':15000000}
@@ -38,7 +48,7 @@ function App() {
   return (
     <> 
     {/* this is root tag for jsx */}
-      <h1>My React app</h1>
+      {/* <h1>My React app</h1>
       <hr/>
       <Context.Provider value ={{data:"This is Global Data from APP"}}>
         <ChildOne></ChildOne>
@@ -73,6 +83,20 @@ function App() {
       <UseRefCalculator></UseRefCalculator>
       <UseStringHook></UseStringHook>
       <CompanyParent></CompanyParent>
+      <ControlledFormCC></ControlledFormCC>
+      <ControlledFormFC></ControlledFormFC>
+      <UncontrolledFormCC></UncontrolledFormCC>
+      <UncontrolledFc></UncontrolledFc> */}
+      <ControlledForm></ControlledForm>
+
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout/>}>
+          <Route path='home' element={<Home/>}></Route>
+          <Route path="*" element={<NoPage/>}></Route>
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }
